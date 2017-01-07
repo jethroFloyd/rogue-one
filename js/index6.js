@@ -5,7 +5,7 @@ angular.module('MyApp',['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
     .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24);
 })
 .controller('AppCtrl', function($scope) {
-    var imagePath = 'img/list/60.jpeg';
+    var imagePath = 'img/bids/';
 
     $scope.phones = [
       {
@@ -41,39 +41,39 @@ angular.module('MyApp',['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
     ];
     $scope.todos = [
       {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        face : imagePath + 'chicken' + '.jpg',
+       who: 'Chicken',
+        what: 'Number of Bids -  2',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Best Rate: Rs. 30/Kg"
       },
       {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        face : imagePath + 'paneer' + '.jpg',
+        who: 'Paneer',
+        what: 'Number of Bids -  45',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Best Rate: Rs. 180/Kg"
       },
       {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        face : imagePath + 'rice' + '.jpg',
+        who: 'Rice',
+        what: 'Number of Bids -  21',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Best Rate: Rs. 38/Kg"
       },
       {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        face : imagePath + 'potato' + '.jpg',
+       who: 'Potato',
+        what: 'Number of Bids -  22',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Best Rate: Rs. 9/Kg"
       },
       {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        face : imagePath + 'tomato' + '.jpg',
+        who: 'Tomato',
+        what: 'Number of Bids -  22',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Best Rate: Rs. 12/Kg"
       },
     ];
 });

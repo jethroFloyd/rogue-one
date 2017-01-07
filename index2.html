@@ -27,32 +27,24 @@
   <md-card>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline">Account Preferences</span>
-        <span class="md-subhead">Tell us a little about you.</span>
+        <span class="md-headline">Delivery Preferences</span>
+        <span class="md-subhead">Address</span>
       </md-card-title-text>
     </md-card-title>
 
     <md-card-content>
       <div layout="row">
         <md-input-container>
-          <label>Street Name</label>
+          <label>Street Address</label>
           <input>
         </md-input-container>
 
         <md-input-container>
-          <label>City</label>
+          <label>Pincode</label>
           <input>
         </md-input-container>
 
-        <md-input-container>
-          <label>State</label>
-          <md-select ng-model="ctrl.userState">
-            <md-option><em>None</em></md-option>
-            <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
-              {{state.abbrev}}
-            </md-option>
-          </md-select>
-        </md-input-container>
+       
       </div>
     </md-card-content>
   </md-card>
@@ -60,47 +52,49 @@
   <md-card>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline">Battle Preferences</span>
-        <span class="md-subhead">Choose wisely if you want to win.</span>
+        <span class="md-headline">Contract Preferences</span>
+        <span class="md-subhead">Provide your best estimate</span>
       </md-card-title-text>
     </md-card-title>
 
     <md-card-content>
       <div layout="row" layout-align="space-between center">
-        <span>What is your favorite weapon?</span>
-        <md-select ng-model="weapon" placeholder="Weapon" class="md-no-underline">
-          <md-option value="axe">Axe</md-option>
-          <md-option value="sword">Sword</md-option>
-          <md-option value="wand">Wand</md-option>
-          <md-option value="pen">Pen?</md-option>
+        <span>Delivery Frequency</span>
+        <md-select ng-model="weapon" placeholder="Choose One.." class="md-no-underline">
+          <md-option value="axe">Daily</md-option>
+          <md-option value="sword">2-3 Days</md-option>
+          <md-option value="wand">Weekly</md-option>
+          <md-option value="pen">Fortnightly</md-option>
         </md-select>
       </div>
 
       <div layout="row" layout-align="space-between center">
-        <span>What armor do you wear?</span>
-        <md-select ng-model="armor" placeholder="Armor" class="md-no-underline" required="" md-no-asterisk="false">
-          <md-option value="cloth">Cloth</md-option>
-          <md-option value="leather">Leather</md-option>
-          <md-option value="chain">Chainmail</md-option>
-          <md-option value="plate">Plate</md-option>
+        <span>What price do you currently buy at?</span>
+        <md-select ng-model="armor" placeholder="Choose a Range" class="md-no-underline" required="" md-no-asterisk="false">
+          <md-option value="cloth">Rs. 5 - 6/Kg</md-option>
+          <md-option value="leather">Rs. 6 - 7/Kg</md-option>
+          <md-option value="chain">Rs. 7 - 8/Kg</md-option>
+          <md-option value="plate">Lower than Rs. 5/Kg</md-option>
         </md-select>
       </div>
 
       <div layout="row" layout-align="space-between center">
-        <span>How do you refresh your magic?</span>
-        <md-select ng-model="drink" placeholder="Drink" class="md-no-underline">
-          <md-option value="water">Water</md-option>
-          <md-option value="juice">Juice</md-option>
-          <md-option value="milk">Milk</md-option>
-          <md-option value="wine">Wine</md-option>
-          <md-option value="mead">Mead</md-option>
+        <span>What credit period are you comfortable with?</span>
+        <md-select ng-model="drink" placeholder="Choose one..." class="md-no-underline">
+          <md-option value="water">No Credit</md-option>
+          <md-option value="juice">Less Than A Week</md-option>
+          <md-option value="milk">One to Three Weeks</md-option>
+          <md-option value="wine">30  - 45 Days</md-option>
+          <md-option value="mead">45 - 60 Days</md-option>
         </md-select>
       </div>
       <br>
-      <h3>Invert</h3>
+      <h3>SKU Parameter</h3>
+      <p>There's 1 SKU-parameter that you can choose for Potatoes: Starch-Fat Ratio.</p>
+
     <md-slider-container>
       <div flex="10" layout layout-align="center center">
-        <span class="md-body-1">Regular</span>
+        <span class="md-body-1">Starch</span>
       </div>
       <md-slider ng-model="invert" min="0" max="100" aria-label="regular slider"></md-slider>
 
@@ -110,7 +104,7 @@
     </md-slider-container>
     <md-slider-container>
       <div flex="10" layout layout-align="center center">
-        <span class="md-body-1">Invert</span>
+        <span class="md-body-1">Fat</span>
       </div>
       <md-slider md-invert ng-model="invert" min="0" max="100" aria-label="invertd slider"></md-slider>
 
@@ -120,12 +114,12 @@
     </md-slider-container>
     <br>
     <md-input-container>
-            <label>Enter date</label>
+            <label>Contract Starting Date Estimate</label>
             <md-datepicker ng-model="user.submissionDate"></md-datepicker>
           </md-input-container>
 
            <md-input-container class="md-block">
-          <label>Biography</label>
+          <label>Additional Requirements</label>
           <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
         </md-input-container>
 

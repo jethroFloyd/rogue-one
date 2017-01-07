@@ -20,8 +20,8 @@
     <div class="col-sm-12">
   <div ng-controller="AppCtrl as ctrl" class="md-padding selectdemoBasicUsage" ng-cloak="" layout="column" ng-app="MyApp">
 
-  <p>
-    Please give us a few details.
+  <p><center>
+    Please give us a few details.</center>
   </p>
 
   <md-card>
@@ -96,9 +96,43 @@
           <md-option value="mead">Mead</md-option>
         </md-select>
       </div>
-    </md-card-content>
-  </md-card>
+      <br>
+      <h3>Invert</h3>
+    <md-slider-container>
+      <div flex="10" layout layout-align="center center">
+        <span class="md-body-1">Regular</span>
+      </div>
+      <md-slider ng-model="invert" min="0" max="100" aria-label="regular slider"></md-slider>
 
+      <md-input-container>
+        <input flex type="number" ng-model="invert" aria-label="regular-slider">
+      </md-input-container>
+    </md-slider-container>
+    <md-slider-container>
+      <div flex="10" layout layout-align="center center">
+        <span class="md-body-1">Invert</span>
+      </div>
+      <md-slider md-invert ng-model="invert" min="0" max="100" aria-label="invertd slider"></md-slider>
+
+      <md-input-container>
+        <input flex type="number" ng-model="invert" aria-label="invert-slider">
+      </md-input-container>
+    </md-slider-container>
+    <br>
+    <md-input-container>
+            <label>Enter date</label>
+            <md-datepicker ng-model="user.submissionDate"></md-datepicker>
+          </md-input-container>
+
+           <md-input-container class="md-block">
+          <label>Biography</label>
+          <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+        </md-input-container>
+
+  </md-card>
+<center>
+  <br><a class = "btn btn-success" href = "https://www.google.com" role = "button">Go!</a> <br>
+  <center>
 </div>
 </div>
 </div>
@@ -116,6 +150,7 @@ Use of this source code is governed by an MIT-style license that can be foundin 
 <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
 
     <script src="js/index2.js"></script>
+    <script src="js/index3.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>

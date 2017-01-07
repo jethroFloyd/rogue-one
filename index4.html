@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Which Suppliers</title>
+  <title>Suppliers</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
   
@@ -18,14 +18,15 @@
 <body>
   <div class="row">
     <div class="col-sm=12">
+      <p><center>If you want to include your current suppliers as well, please select them here.</center></p> 
       <div ng-controller="ContactChipDemoCtrl as ctrl" layout="column" ng-cloak="" class="chipsdemoContactChips" ng-app="MyApp">
 
   <md-content class="md-padding autocomplete" layout="column">
-    <md-contact-chips ng-model="ctrl.contacts" md-contacts="ctrl.querySearch($query)" md-contact-name="name" md-contact-image="image" md-contact-email="email" md-highlight-flags="i" filter-selected="ctrl.filterSelected" placeholder="To">
+    <md-contact-chips ng-model="ctrl.contacts" md-contacts="ctrl.querySearch($query)" md-contact-name="name" md-contact-image="image" md-contact-email="email" md-highlight-flags="i" filter-selected="ctrl.filterSelected" placeholder="Add Suppliers">
     </md-contact-chips>
 
     <md-list class="fixedRows">
-      <md-subheader class="md-no-sticky">Contacts</md-subheader>
+      <md-subheader class="md-no-sticky">Existing Suppliers</md-subheader>
       <md-list-item class="md-2-line contact-item" ng-repeat="(index, contact) in ctrl.allContacts" ng-if="ctrl.contacts.indexOf(contact) < 0">
         <img ng-src="{{contact.image}}" class="md-avatar" alt="{{contact.name}}">
         <div class="md-list-item-text compact">

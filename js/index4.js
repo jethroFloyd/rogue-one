@@ -79,22 +79,22 @@
 
     function loadContacts() {
       var contacts = [
-        'Marina Augustine',
-        'Oddr Sarno',
-        'Nick Giannopoulos',
-        'Narayana Garner',
-        'Anita Gros',
-        'Megan Smith',
-        'Tsvetko Metzger',
-        'Hector Simek',
-        'Some-guy withalongalastaname'
+        'Feroze Chickenwala',
+        'Keshava Javeragowda',
+        'Ritobroto Maitra',
+        'Mainak Bhattacharya',
+        'Sombodhi Ghosh',
+        'Makhanlal Chawalwala',
+        'Donald Trump',
+        'Hillary Clinton',
+        'Karan Jakhar'
       ];
 
       return contacts.map(function (c, index) {
         var cParts = c.split(' ');
         var contact = {
           name: c,
-          email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@example.com',
+          email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@aficionadoventures.com',
           image: 'http://lorempixel.com/50/50/people?' + index
         };
         contact._lowername = contact.name.toLowerCase();

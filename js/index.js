@@ -49,32 +49,32 @@
     function loadAll() {
       var repos = [
         {
-          'name'      : 'Angular 1',
-          'url'       : 'https://github.com/angular/angular.js',
-          'watchers'  : '3,623',
-          'forks'     : '16,175',
+          'name'      : 'Potato',
+          'url'       : '#',
+          'watchers'  : '36',
+          'forks'     : '16',
         },
         {
-          'name'      : 'Angular 2',
-          'url'       : 'https://github.com/angular/angular',
-          'watchers'  : '469',
-          'forks'     : '760',
+          'name'      : 'Chicken',
+          'url'       : '#',
+          'watchers'  : '46',
+          'forks'     : '6',
         },
         {
-          'name'      : 'Angular Material',
-          'url'       : 'https://github.com/angular/material',
-          'watchers'  : '727',
-          'forks'     : '1,241',
+          'name'      : 'Mutton',
+          'url'       : '#',
+          'watchers'  : '7',
+          'forks'     : '3',
         },
         {
-          'name'      : 'Bower Material',
-          'url'       : 'https://github.com/angular/bower-material',
+          'name'      : 'Tomatoes',
+          'url'       : '#',
           'watchers'  : '42',
           'forks'     : '84',
         },
         {
-          'name'      : 'Material Start',
-          'url'       : 'https://github.com/angular/material-start',
+          'name'      : 'Rice',
+          'url'       : '#',
           'watchers'  : '81',
           'forks'     : '303',
         }
@@ -97,19 +97,6 @@
 
     }
   }
-})();
-
-(function () {
-  angular.module('buttonsDemo1', ['ngMaterial'])
-
-.controller('AppCtrl', function($scope) {
-  $scope.title1 = 'Button';
-  $scope.title4 = 'Warn';
-  $scope.isDisabled = true;
-
-  $scope.googleUrl = 'http://google.com';
-
-});
 })();
 
 
